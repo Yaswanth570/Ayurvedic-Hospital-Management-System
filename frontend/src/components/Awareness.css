@@ -1,0 +1,547 @@
+/* Awareness Component Styles for Ayurvedic Hospital Management System */
+
+.awareness-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 2rem 0;
+}
+
+/* Page Header */
+.page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.page-title {
+  color: #2c5530;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-family: 'Georgia', serif;
+}
+
+.page-subtitle {
+  color: #666;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+/* Awareness Sections */
+.awareness-section {
+  margin-bottom: 3rem;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.awareness-section:nth-child(2) { animation-delay: 0.1s; }
+.awareness-section:nth-child(3) { animation-delay: 0.2s; }
+.awareness-section:nth-child(4) { animation-delay: 0.3s; }
+.awareness-section:nth-child(5) { animation-delay: 0.4s; }
+.awareness-section:nth-child(6) { animation-delay: 0.5s; }
+.awareness-section:nth-child(7) { animation-delay: 0.6s; }
+
+.card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card-header {
+  background: linear-gradient(135deg, #2c5530 0%, #3d6b42 100%);
+  color: white;
+  padding: 1.5rem;
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+/* Principles Grid */
+.principles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.principle-item {
+  text-align: center;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 15px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.principle-item:hover {
+  border-color: #d4af37;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.2);
+}
+
+.principle-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.principle-item h3 {
+  color: #2c5530;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.principle-item p {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Routine Timeline */
+.routine-timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.routine-timeline::before {
+  content: '';
+  position: absolute;
+  left: 1rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #2c5530, #d4af37);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -1.5rem;
+  top: 0.5rem;
+  width: 12px;
+  height: 12px;
+  background: #2c5530;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 0 3px #2c5530;
+}
+
+.timeline-time {
+  font-weight: 600;
+  color: #2c5530;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content h4 {
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content p {
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Seasons Grid */
+.seasons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.season-item {
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 15px;
+  border-left: 4px solid #d4af37;
+  transition: transform 0.3s ease;
+}
+
+.season-item:hover {
+  transform: translateY(-3px);
+}
+
+.season-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.season-item h3 {
+  color: #2c5530;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.season-item p {
+  color: #666;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.season-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.season-item li {
+  color: #666;
+  padding: 0.25rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.season-item li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #28a745;
+  font-weight: bold;
+}
+
+/* Diet Content */
+.diet-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.diet-section h3 {
+  color: #2c5530;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #d4af37;
+  padding-bottom: 0.5rem;
+}
+
+.tastes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.taste-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 10px;
+  border-left: 4px solid #2c5530;
+}
+
+.taste-name {
+  font-weight: 600;
+  color: #2c5530;
+}
+
+.taste-description {
+  color: #666;
+  font-size: 0.9rem;
+  text-align: right;
+  max-width: 60%;
+}
+
+.diet-principles {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.diet-principles li {
+  color: #666;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e0e0e0;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.diet-principles li:last-child {
+  border-bottom: none;
+}
+
+.diet-principles li::before {
+  content: '🌿';
+  position: absolute;
+  left: 0;
+  top: 0.75rem;
+}
+
+/* Ailments Grid */
+.ailments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.ailment-item {
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 15px;
+  border-top: 4px solid #2c5530;
+}
+
+.ailment-item h4 {
+  color: #2c5530;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.ailment-item p {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.ailment-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ailment-item li {
+  color: #666;
+  padding: 0.5rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.ailment-item li::before {
+  content: '💡';
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+}
+
+/* Prevention Content */
+.prevention-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.practices-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.practice-item {
+  text-align: center;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.practice-item:hover {
+  transform: translateY(-5px);
+}
+
+.practice-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.practice-item h4 {
+  color: #2c5530;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.practice-item p {
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.prevention-section p {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Contact Info */
+.contact-info {
+  text-align: center;
+}
+
+.contact-info p {
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #2c5530;
+  font-weight: 500;
+}
+
+.contact-icon {
+  font-size: 1.2rem;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .awareness-container {
+    padding: 1rem 0;
+  }
+  
+  .page-title {
+    font-size: 2rem;
+  }
+  
+  .page-subtitle {
+    font-size: 1rem;
+  }
+  
+  .card-body {
+    padding: 1.5rem;
+  }
+  
+  .principles-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .routine-timeline {
+    padding-left: 1.5rem;
+  }
+  
+  .timeline-item {
+    padding-left: 1.5rem;
+  }
+  
+  .seasons-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .tastes-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .taste-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .taste-description {
+    text-align: left;
+    max-width: 100%;
+  }
+  
+  .ailments-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .practices-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .contact-details {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .page-header {
+    padding: 1.5rem;
+  }
+  
+  .page-title {
+    font-size: 1.8rem;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .card-header h2 {
+    font-size: 1.3rem;
+  }
+  
+  .principle-item,
+  .season-item,
+  .ailment-item,
+  .practice-item {
+    padding: 1rem;
+  }
+  
+  .principle-icon,
+  .season-icon,
+  .practice-icon {
+    font-size: 2rem;
+  }
+  
+  .routine-timeline {
+    padding-left: 1rem;
+  }
+  
+  .timeline-item {
+    padding-left: 1rem;
+  }
+  
+  .timeline-item::before {
+    left: -1rem;
+  }
+  
+  .taste-item {
+    padding: 0.75rem;
+  }
+}
