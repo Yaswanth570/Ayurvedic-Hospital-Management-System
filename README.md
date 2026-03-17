@@ -1,3 +1,4 @@
+
 # Ayurvedic Hospital Management System
 
 A comprehensive healthcare management system built with React frontend, Node.js/Express backend, MongoDB database, and JWT authentication. This system is designed specifically for Ayurvedic hospitals and healthcare facilities.
